@@ -1,14 +1,13 @@
-import WaringSProblemVariantsCanonicalLaneLean.BridgeLemmas
+import BridgeLemmas
 
 namespace HautevilleHouse
 namespace WaringSProblemVariantsCanonicalLaneLean
 
-def gateClosed (A : AdmissibleClass) : Prop :=
+def gateClosed (A : WaringAdmissibleClass) : Prop :=
   A.endpointSatisfied ∨ A.remainderRecorded
 
-theorem gate_from_admissible_class (A : AdmissibleClass) :
-    gateClosed A := by
-  exact A.gateWitness
+theorem gate_from_admissible_class (A : WaringAdmissibleClass) : gateClosed A :=
+  A.gateWitness
 
 end WaringSProblemVariantsCanonicalLaneLean
 end HautevilleHouse
