@@ -1,4 +1,4 @@
-import canonicalLaneMathlib.AdmissibleClass
+import WaringSProblemVariantsCanonicalLaneLean.Projection
 
 namespace HautevilleHouse
 namespace WaringSProblemVariantsCanonicalLaneLean
