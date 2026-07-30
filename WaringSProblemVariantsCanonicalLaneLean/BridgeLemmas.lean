@@ -4,7 +4,7 @@ namespace HautevilleHouse
 namespace WaringSProblemVariantsCanonicalLaneLean
 
 def bridgeClosed (A : AdmissibleClass) : Prop :=
-  WaringSProblemWitnessClosed A.object
+  WaringWitnessClosed A.object
 
 theorem bridge_from_admissible_class (A : AdmissibleClass) :
     bridgeClosed A := by

@@ -1,5 +1,4 @@
 import canonicalLaneMathlib.AdmissibleClass
-import HautevilleHouse.WaringSProblemVariantsCanonicalLaneLean.BridgeLemmas
 
 namespace HautevilleHouse
 namespace WaringSProblemVariantsCanonicalLaneLean
