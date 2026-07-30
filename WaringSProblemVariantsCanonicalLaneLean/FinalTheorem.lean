@@ -1,13 +1,16 @@
-import GateLemmas
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.WaringSProblemVariantsCanonicalLaneLean.WaringSProjection
+import HautevilleHouse.WaringSProblemVariantsCanonicalLaneLean.WaringSSumsSets
 
 namespace HautevilleHouse
 namespace WaringSProblemVariantsCanonicalLaneLean
 
-def ConstrainedWaringClosure (A : WaringAdmissibleClass) : Prop :=
+def constrainedWaringSClosure (A : AdmissibleClass) : Prop :=
   bridgeClosed A ∧ gateClosed A
 
-theorem constrained_waring_endgame (A : WaringAdmissibleClass) : ConstrainedWaringClosure A :=
-  And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+theorem constrained_waring_s_endgame (A : AdmissibleClass) :
+    constrainedWaringSClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
 
 end WaringSProblemVariantsCanonicalLaneLean
 end HautevilleHouse
